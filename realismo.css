@@ -1,29 +1,9 @@
-body
+.tema1
 {
-    background: #f5edd3;
-    padding: 0;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif
-}
+    margin-top: 90px; /* Aumente ou ajuste esse valor conforme necessário */
+    margin-bottom: 20px; /* Ajuste o espaçamento inferior se necessário */
+    text-align: center;
 
-.page
-{
-    text-align: justify;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-iframe{
-    height: 315px;
-    width: 500px;
-}
-
-p
-{
-    font-size: 18px;
-    margin: 10px;
-    
 }
 
 h1
@@ -36,50 +16,45 @@ h1
     text-shadow: 3px 3px 1px white;
 }
 
-.espaco{
-    margin: 10px;
-}
-
-.image
+.texto
 {
- display: flex;
- 
- max-width: 1200px;
-
-}
-
-img{
-    width: 480px;
-    height: 50%;
-    margin: 0;
-}
-
-ul{
+    max-width: 900px;
     margin: auto;
+    text-align: justify;
+    font-size: large;
+    padding: 20px;
+    
 }
 
-.corpo
+
+
+hr
+{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+
+
+.imagem1
 {
     display: flex;
-
+    margin: auto;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+.imagem1 img{
+    width: 200px; /* Tamanho inicial da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease, border 0.3s ease;
 }
 
-.coluna
-{
-    width: 330px;
-    padding: 8px;
-    height: 380px;
-}
-
-.price-box
-{
-    background-color: #fff;
-    color: #555;
-    list-style-type: none;
-    border: 1px solid #555;
-    margin: 0;
-    padding: 0;
-    height: 24rem;
+.imagem1 img:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    border: 5px solid #3a3126;
 }
 
 .logo{
@@ -88,31 +63,56 @@ ul{
     margin-right: 20px;
 }
 
-.cabeça
-{
-    background-color: #111;
-    color: #fff;
-    font-size: 25px;
-    height: 60px;
-    align-items: center;
- 
-   
+
+.texto-imagem{
+     /* Ajuste conforme necessário para diminuir ou aumentar a margem */
+    max-width: 600px; /* Controla o comprimento máximo do texto */
+    text-align: justify;
 }
 
-li{
+.conteudo{
+    position: absolute;
+    bottom: 10px; /* Define a posição do texto em relação à div pai */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
     padding: 5px;
-    
+    text-align: center;
+    z-index: 10;
+    width: 90%; /* Ajuste a largura do texto */
+ 
 }
 
+.espaço{
+    margin: 10px;
+}
 
-.gon
+.video
 {
-    width: 312px;
-    height: 322px;
-    padding: 0;
+    display: flex;
+    margin: auto;
 }
 
+.container
+{
+    margin: 20px 70px;
+}
 
+body{
+    background: #d6ceb3;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 18px;
+}
+
+.tema2
+{
+    text-align: center;
+    margin: 15px;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
@@ -123,6 +123,12 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    background: #f5edd3;
+    padding: 0;
+    margin: 0;
+
+}
 
 .header {
     display: block;
@@ -161,6 +167,49 @@ body {
     margin-top: 60px;
 }
 
+.container {
+    display: flex; /* Faz as imagens ficarem lado a lado */
+    flex-direction: row; /* Coloca as imagens em coluna */
+    align-items: center; /* Centraliza as imagens */
+}
+
+.imagem2
+{ 
+    margin: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem2 img{
+
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.imagem2 img:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    border: 5px solid #3a3126;
+}
+
+.imagem3
+{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.imagem3 img{
+
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.imagem3 img:hover{
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    border: 5px solid #3a3126;
+}
+
+
+
 .mainInner {
     display: table;
     height: 10%;
@@ -184,6 +233,7 @@ body {
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
     background: linear-gradient(180deg, #5a3101ef 0%, #f0da82ef 100%);
+    z-index: 100;
 }
 
 .sidebarMenuInner {
@@ -250,6 +300,10 @@ input[type=checkbox] {
     margin: 2px 0;
 }
 
+.literal
+{
+	color: #5a3101ef;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
@@ -376,61 +430,67 @@ footer {
     font-weight: 100;
 }
 
-
-@media screen and (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+@media (max-width: 500px) {
+    /* Espaçamento nas bordas do site */
+    body {
+        margin: 0; /* Remove qualquer margem padrão do body */
+        padding: 0; 
     }
 
-    .login-button {
-        display: none;
+    .tema1{
+        margin-top: 100px;
     }
 
-    .mobile-menu-icon {
-        display: block;
+    .imagem1 {
+        width: 100%; /* A imagem1 ocupa toda a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Garante que a imagem fique em bloco */
+    }
+
+    .texto {
+        width: 100%; /* Faz o texto ocupar toda a largura da tela */
+        margin-top: 10px; /* Adiciona margem superior ao texto */
+        padding: 10px;
+    }
+    
+    .imagem1, .texto{
+        gap: 20px;
+    }
+
+    .video {
+        width: 100%; /* O vídeo ocupa toda a largura da tela */
+        height: 230px; /* Aumenta a altura do vídeo para um tamanho normal */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; /* Coloca as imagens uma embaixo da outra */
+        align-items: center; /* Centraliza as imagens horizontalmente */
+        padding: 0; /* Remove o padding, pois as imagens agora têm margem de 5px */
+    }
+
+    .imagem2, .imagem3 {
+        width: calc(100% - 10px); /* Mantém uma largura total de 100%, com margem de 5px nas bordas */
+        height: auto; /* Mantém a proporção original */
+        margin: 5px 0; /* Adiciona um espaço de 5px entre as imagens */
+        transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+    }
+
+    .imagem2 img,
+    .imagem3 img {
+        width: calc(100% - 10px); /* Aumenta a largura da imagem com margem */
+        height: auto; /* Mantém a proporção */
+        margin: 0; /* Remove margens */
+        border: none; /* Remove bordas se houver */
+    }
+
+    .imagem2:hover img, .imagem3:hover img {
+        transform: scale(1.05); /* Aplica um zoom leve ao passar o mouse */
+    }
+    .header{
+        width: 100%; /* Garante que o header ocupe toda a largura da tela */
+        height: auto; /* Define a altura que desejar */
+        margin: 0; /* Remove qualquer margem */
+        padding: 0; /* Remove qualquer padding */
     }
 }
-
-@media (max-width: 720px) {
-    #footer_content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
-
-    .image
-    {
-        display: block;
-   
-    }
-
-
-    img{
-        width: 100%;
-
-    }
-
-    iframe{
-        width: 100%;
-    }
-
-    .page{
-        width: 100%;
-    }
-
-    h1{
-        width: 100%;
-    }
-
-    .corpo{
-        flex-wrap: wrap;
-    }
-
-}
-
-hr
-{
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
