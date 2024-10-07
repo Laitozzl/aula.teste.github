@@ -305,7 +305,7 @@ h1
     }
     
     #input_group button {
-        background-color: #7f37c9;
+        background-color: rgb(83, 78, 78);
         border: none;
         color: var(--color-neutral-40);
         padding: 0px 0.75rem;
@@ -337,13 +337,11 @@ h1
             gap: 2rem;
         }
 
-        .login-button {
-            display: none;
+        .body {
+            width: 100%;
+
         }
     
-        .mobile-menu-icon {
-            display: block;
-        }
     }
     
     @media (max-width: 720px) {
